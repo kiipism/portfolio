@@ -1,10 +1,132 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiipism</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            padding: 50px 20px;
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .card {
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .card h3 {
+            margin-top: 0;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        form input, form textarea {
+            width: 80%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+        form button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+        form button:hover {
+            background-color: #555;
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to My Portfolio</h1>
-    <p>This is my first GitHub Pages site!</p>
+    <header>
+        <h1>Your Name</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hi, I'm Your Name, a passionate web developer with a love for coding and building projects. I enjoy learning new technologies and creating solutions to real-world problems.</p>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Project 1</h3>
+                <p>A brief description of your project. You can link to GitHub or your live site.</p>
+                <a href="https://github.com/your-username/project1" target="_blank">View Project</a>
+            </div>
+            <div class="card">
+                <h3>Project 2</h3>
+                <p>A brief description of another project. Link to your GitHub or website.</p>
+                <a href="https://github.com/your-username/project2" target="_blank">View Project</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>HTML</h3>
+                <p>I am experienced in Skript, including item creation, GUIs, staff-related utilities, and server core frameworks</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <form action="your-email-link-or-form-handler" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
 </body>
 </html>
